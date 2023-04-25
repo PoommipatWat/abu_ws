@@ -38,14 +38,15 @@ int inb1 = 0, inb2 = 0, inb3 = 0, inb4 = 0;
 
 #define stepPin 26
 #define limit_s 27
-volatile float pwmm = 0;
 
-volatile int state = 0;
+
+float pwmm = 0;
+int state = 0;
 
 #define shoot_motor_under 14
 #define shoot_motor_top 15
 
-// linear.x = ล้อซ้ายหน้า
+// linear.x = ล้อซ้ายหน้า 
 // linear.y = ล้อขวาหน้า
 // angular.x = ล้อซ้ายหลัง
 // angular.y = ล้อขวาหลัง
@@ -58,28 +59,7 @@ int lim_switch(){
   return st;
 }  
 
-void sys_faq(){
-  digitalWrite(stepPin,HIGH); 
-  delayMicroseconds(50); 
-  digitalWrite(stepPin,LOW); 
-  delayMicroseconds(50);
-}
-          
-bool faq_cw(){
-  if(lim_switch() == HIGH){
-    sys_faq();
-    return true;
-  }
-  else return false;
-}
-bool faq_ccw(){
-  if(lim_switch() == LOW){
-    sys_faq();
-    return true;
-  }
-  else return false;
-} 
-      
+
 void subscription_callback(const void * msgin)
 {
 //------------------------------------------- drive -----------------------------------------//
@@ -135,33 +115,27 @@ void subscription_callback(const void * msgin)
 
 //---------------------------------------------------------------------------------------------------------------------//
     pwmm = msg->linear.z;
-    if((pwmm > 0) && (state == 1)){
-      state = 2;
-    }
-    //if((state == 1) || (state == 2)) analogWrite();
-    //else digitalWrite(,LOW);
-}
+    if((pwmm > 0)  && (state == 1)) state = 2;
 
-void thread_func(){
-  rclc_executor_spin_some(&executor, RCL_MS_TO_NS(300));
-}
-void prethreads(){
-  // state == 0 (while (faw_cw))
-  // state == 1 (when state==0 && msg->linear.x>0) (while (faq_ccw)) (if(faq_ccw == false) --> state=0)
-  while(1){
+
     if(state == 0){
-      if(faq_cw() == false) state=1;
+      if(lim_switch() == 1) digitalWrite(stepPin, HIGH);
+      else{
+        state = 1;
+        digitalWrite(stepPin, LOW);
+      }
     }
-    else if(state == 1){
-      faq_cw();
+    else if (state == 1){
+      if(lim_switch() == 1) digitalWrite(stepPin, HIGH);
+      else digitalWrite(stepPin, LOW);
     }
-    else if(state == 2){
-      if(faq_ccw() == false) state=0;
+    else if (state == 2){
+      if(lim_switch() == 0) digitalWrite(stepPin, HIGH);
+      else{
+        digitalWrite(stepPin, LOW);
+        state = 0;
+      }
     }
-  }
-}
-void thread_func2(){
-  while(1) sys_faq();
 }
 
 void setup() {
@@ -179,6 +153,7 @@ void setup() {
   pinMode(INB4, OUTPUT);
 
   pinMode(stepPin,OUTPUT); 
+  digitalWrite(stepPin, LOW);
   pinMode(limit_s,INPUT_PULLUP);
 
   delay(1000);
@@ -201,8 +176,8 @@ void setup() {
 
   rclc_executor_init(&executor, &support.context, 1, &allocator);
   rclc_executor_add_subscription(&executor, &subscriber, &msg, &subscription_callback, ON_NEW_DATA);
-  threads.addThread(thread_func);
 }
 
 void loop() {
+  rclc_executor_spin_some(&executor, RCL_MS_TO_NS(300));
 }
