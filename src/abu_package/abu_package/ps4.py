@@ -56,14 +56,14 @@ class Ps4(Node):
 		msg = Twist()
 		
 		if ((self.axes["AX"] > 0) or (self.axes["AY"] > 0)):
-			x = -1*(self.axes["AX"])
-			y = self.axes["AY"]
+			y = -1*(self.axes["AX"])
+			x = -1*self.axes["AY"]
 		elif ((self.axes["AX"] < 0) or (self.axes["AY"] < 0)):
-			x = -1*(self.axes["AX"])
-			y = self.axes["AY"]
+			y = -1*(self.axes["AX"])
+			x = -1*self.axes["AY"]
 		else:
-			x = -1*(self.axes["LX"])
-			y = self.axes["LY"]
+			y = -1*(self.axes["LX"])
+			x = -1*self.axes["LY"]
 			if((x > limit) and (y > limit)):
 				x = 0.707
 				y = 0.707
@@ -129,10 +129,10 @@ class Ps4(Node):
 			self.counter2 = 4
 		if(self.counter2 > 0):
 			self.counter2 -= 1
-		if(self.state2 > 3):
+		if(self.state2 > 2):
 			self.state2 = 0
 		if(self.state2 < 0):
-			self.state2 = 3
+			self.state2 = 2
 		self.state2 = float(self.state2)
 		
 		if(self.button["T"] == 1):
