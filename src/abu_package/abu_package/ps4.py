@@ -110,34 +110,28 @@ class Ps4(Node):
 			self.counter = 4
 		if(self.counter > 0):
 			self.counter -= 1
-		if(self.state > 2):
+		if(self.state > 1):
 			self.state = 0
 		if(self.state < 0):
-			self.state = 2
+			self.state = 1
 		if(self.state == 0):
-			self.pwm = 50.0
+			self.pwm = 105.0
 		elif(self.state == 1):
-			self.pwm = 125.0
-		else:
-			self.pwm = 255.0
+			self.pwm = 165.0
 		
 		if(self.button["X"] == 1):
 			msg.linear.z = self.pwm
 #//------------------------------------------------------------------------------------------------//
-		if((self.button["L1"] == 1) and (self.counter2 == 0)):
-			self.state2 += 1
-			self.counter2 = 4
-		if(self.counter2 > 0):
-			self.counter2 -= 1
-		if(self.state2 > 2):
-			self.state2 = 0
-		if(self.state2 < 0):
-			self.state2 = 2
-		self.state2 = float(self.state2)
 		
 		if(self.button["T"] == 1):
-			msg.angular.z = self.state2
-
+			msg.angular.z = 1.0
+		if((self.button["L1"] == 1):
+			msg.angular.z = 10.0
+		if((self.button["Share"] == 1):
+			msg.angular.z = 20.0
+		if((self.button["Option"] == 1):
+			msg.angular.z = 30.0
+		
 		self.sent_drive.publish(msg)
 
 
