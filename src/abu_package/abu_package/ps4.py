@@ -125,11 +125,11 @@ class Ps4(Node):
 		
 		if(self.button["T"] == 1):
 			msg.angular.z = 1.0
-		if((self.button["L1"] == 1):
+		if(self.button["L1"] == 1):
 			msg.angular.z = 10.0
-		if((self.button["Share"] == 1):
+		if(self.button["Share"] == 1):
 			msg.angular.z = 20.0
-		if((self.button["Option"] == 1):
+		if(self.button["Option"] == 1):
 			msg.angular.z = 30.0
 		
 		self.sent_drive.publish(msg)
