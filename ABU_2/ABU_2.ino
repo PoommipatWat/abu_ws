@@ -39,6 +39,14 @@ int inb1 = 0, inb2 = 0, inb3 = 0, inb4 = 0;
 #define stepPin 26
 #define limit_s 27
 
+#define limit_s1 18
+#define limit_s2 19
+
+#define pick_ina 40
+#define pick_inb 41
+float pick = 0;
+String pick_state = "up";
+bool pick_on = false;
 
 float pwmm = 0;
 int state = 0;
@@ -58,6 +66,15 @@ int lim_switch(){
   int st = digitalRead(limit_s);
   return st;
 }  
+
+int lim_switch1(){
+  int st = digitalRead(limit_s1);
+  return st;
+}
+int lim_switch2(){
+  int st = digitalRead(limit_s2);
+  return st;
+}
 
 
 void subscription_callback(const void * msgin)
@@ -113,29 +130,83 @@ void subscription_callback(const void * msgin)
     digitalWrite(INA4, ina4);
     digitalWrite(INB4, inb4);
 
-//---------------------------------------------------------------------------------------------------------------------//
+//------------------------------------------- dobot -----------------------------------------//
     pwmm = msg->linear.z;
     if((pwmm > 0)  && (state == 1)) state = 2;
 
 
     if(state == 0){
-      if(lim_switch() == 1) digitalWrite(stepPin, HIGH);
+      if(lim_switch() == true){
+        digitalWrite(stepPin, HIGH);
+        analogWrite(shoot_motor_under, pwmm);
+        analogWrite(shoot_motor_top, pwmm);
+      }
       else{
         state = 1;
         digitalWrite(stepPin, LOW);
       }
     }
     else if (state == 1){
-      if(lim_switch() == 1) digitalWrite(stepPin, HIGH);
+      analogWrite(shoot_motor_under, pwmm);
+      analogWrite(shoot_motor_top, pwmm);
+      if(lim_switch() == true) digitalWrite(stepPin, HIGH);
       else digitalWrite(stepPin, LOW);
     }
     else if (state == 2){
-      if(lim_switch() == 0) digitalWrite(stepPin, HIGH);
+      if(lim_switch() == false){
+        digitalWrite(stepPin, HIGH);
+        analogWrite(shoot_motor_under, pwmm);
+        analogWrite(shoot_motor_top, pwmm);
+      }
       else{
         digitalWrite(stepPin, LOW);
         state = 0;
       }
     }
+//------------------------------------------- shoot -----------------------------------------//
+    if((state == 2) || (state == 0)){
+      analogWrite(shoot_motor_under, pwmm);
+      analogWrite(shoot_motor_top, pwmm);
+    }
+    else{
+      analogWrite(shoot_motor_under, 0);
+      analogWrite(shoot_motor_top, 0);
+    }
+
+//------------------------------------------- pick -----------------------------------------//
+
+    pick = msg->angular.z;
+    if((pick > 0) && (pick_on == false)){
+      pick_on = true;
+    }
+    if(pick_on){
+      if(pick_state == "up"){
+        if(lim_switch1() == false){
+          pick_state = "down";
+          pick_on = false;
+        }
+        else{
+          digitalWrite(pick_ina, HIGH);
+          digitalWrite(pick_inb, LOW);
+        }
+      }
+      else{
+        if(lim_switch2() == false){
+          pick_state = "up";
+          pick_on = false;
+        }
+        else{
+          digitalWrite(pick_ina, LOW);
+          digitalWrite(pick_inb, HIGH);
+        }
+      }
+    }
+    else{
+      digitalWrite(pick_ina, LOW);
+      digitalWrite(pick_inb, LOW);
+    }
+
+    
 }
 
 void setup() {
@@ -154,8 +225,17 @@ void setup() {
 
   pinMode(stepPin,OUTPUT); 
   digitalWrite(stepPin, LOW);
+ 
   pinMode(limit_s,INPUT_PULLUP);
+  pinMode(limit_s1,INPUT_PULLUP);
+  pinMode(limit_s2,INPUT_PULLUP);
 
+  pinMode(shoot_motor_under, OUTPUT);
+  pinMode(shoot_motor_top, OUTPUT);
+
+  pinMode(pick_ina, OUTPUT);
+  pinMode(pick_inb, OUTPUT);
+  
   delay(1000);
 
   set_microros_transports();
