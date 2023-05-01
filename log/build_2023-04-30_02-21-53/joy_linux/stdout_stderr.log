@@ -1,0 +1,68 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found diagnostic_updater: 3.1.0 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Looking for include file linux/joystick.h
+-- Looking for include file linux/joystick.h - found
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/poom/abu_ws/src/joystick_drivers/joy_linux/msg/cpp
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/poom/abu_ws/build/joy_linux
+[ 50%] [32mBuilding CXX object CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable joy_linux_node[0m
+[100%] Built target joy_linux_node
+-- Install configuration: ""
+-- Installing: /home/poom/abu_ws/install/joy_linux/lib/joy_linux/joy_linux_node
+-- Set runtime path of "/home/poom/abu_ws/install/joy_linux/lib/joy_linux/joy_linux_node" to ""
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/ament_index/resource_index/package_run_dependencies/joy_linux
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/ament_index/resource_index/parent_prefix_path/joy_linux
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.sh
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.dsv
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/path.sh
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/path.dsv
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.bash
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.sh
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.zsh
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.dsv
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/package.dsv
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/ament_index/resource_index/packages/joy_linux
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig.cmake
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig-version.cmake
+-- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/package.xml

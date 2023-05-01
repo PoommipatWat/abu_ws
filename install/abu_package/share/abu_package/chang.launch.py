@@ -9,6 +9,7 @@ def generate_launch_description():
 	node_drive = Node(package="abu_package", executable="drive_node")
 #	node_shoot = Node(package="abu_package", executable="shoot_node")
 #	node_feed = Node(package="abu_package", executable="feed_node")
+	node_color = Node(package="abu_package", executable="color_node")
 
 
 	ld.add_action(node_drive)
@@ -16,6 +17,7 @@ def generate_launch_description():
 #	ld.add_action(node_shoot)
 #	ld.add_action(node_feed)
 	ld.add_action(node_microros)
+	ld.add_action(node_color)
 
 	return ld
 

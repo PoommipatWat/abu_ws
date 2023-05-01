@@ -1,4 +1,5 @@
 [console_scripts]
+color_node = abu_package.detectColor:main
 drive_node = abu_package.ps4:main
 feed_node = abu_package:main
 shoot_node = abu_package:main

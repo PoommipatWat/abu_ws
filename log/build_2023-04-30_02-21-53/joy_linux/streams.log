@@ -1,0 +1,74 @@
+[0.239s] Invoking command in '/home/poom/abu_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy_linux -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy_linux
+[0.303s] -- The C compiler identification is GNU 9.4.0
+[0.351s] -- The CXX compiler identification is GNU 9.4.0
+[0.360s] -- Detecting C compiler ABI info
+[0.407s] -- Detecting C compiler ABI info - done
+[0.417s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.417s] -- Detecting C compile features
+[0.417s] -- Detecting C compile features - done
+[0.420s] -- Detecting CXX compiler ABI info
+[0.474s] -- Detecting CXX compiler ABI info - done
+[0.483s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.483s] -- Detecting CXX compile features
+[0.484s] -- Detecting CXX compile features - done
+[0.486s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.508s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.508s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.721s] -- Found diagnostic_msgs: 2.0.5 (/opt/ros/foxy/share/diagnostic_msgs/cmake)
+[0.765s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.772s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.830s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.857s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.929s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.999s] -- Found diagnostic_updater: 3.1.0 (/opt/ros/foxy/share/diagnostic_updater/cmake)
+[1.051s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[1.053s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.054s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.114s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.115s] -- Looking for pthread_create in pthreads
+[1.154s] -- Looking for pthread_create in pthreads - not found
+[1.154s] -- Looking for pthread_create in pthread
+[1.200s] -- Looking for pthread_create in pthread - found
+[1.202s] -- Found Threads: TRUE  
+[1.325s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.412s] -- Looking for include file linux/joystick.h
+[1.472s] -- Looking for include file linux/joystick.h - found
+[1.476s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.544s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.544s] -- Configured cppcheck include dirs: /home/poom/abu_ws/src/joystick_drivers/joy_linux/msg/cpp
+[1.545s] -- Configured cppcheck exclude dirs and/or files: 
+[1.545s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.545s] -- Configured cpplint exclude dirs and/or files: 
+[1.545s] -- Added test 'lint_cmake' to check CMake code style
+[1.546s] -- Added test 'uncrustify' to check C / C++ code style
+[1.546s] -- Configured uncrustify additional arguments: 
+[1.547s] -- Added test 'xmllint' to check XML markup files
+[1.548s] -- Configuring done (1.3s)
+[1.556s] -- Generating done (0.0s)
+[1.557s] -- Build files have been written to: /home/poom/abu_ws/build/joy_linux
+[1.573s] Invoked command in '/home/poom/abu_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy_linux -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy_linux
+[1.577s] Invoking command in '/home/poom/abu_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy_linux -- -j12 -l12
+[1.610s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_linux_node.dir/src/joy_linux_node.cpp.o[0m
+[8.062s] [100%] [32m[1mLinking CXX executable joy_linux_node[0m
+[8.305s] [100%] Built target joy_linux_node
+[8.319s] Invoked command in '/home/poom/abu_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy_linux -- -j12 -l12
+[8.358s] Invoking command in '/home/poom/abu_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy_linux
+[8.382s] -- Install configuration: ""
+[8.382s] -- Installing: /home/poom/abu_ws/install/joy_linux/lib/joy_linux/joy_linux_node
+[8.384s] -- Set runtime path of "/home/poom/abu_ws/install/joy_linux/lib/joy_linux/joy_linux_node" to ""
+[8.384s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/ament_index/resource_index/package_run_dependencies/joy_linux
+[8.384s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/ament_index/resource_index/parent_prefix_path/joy_linux
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.sh
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/ament_prefix_path.dsv
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/path.sh
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/environment/path.dsv
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.bash
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.sh
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.zsh
+[8.385s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/local_setup.dsv
+[8.386s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/package.dsv
+[8.386s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/ament_index/resource_index/packages/joy_linux
+[8.386s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig.cmake
+[8.386s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/cmake/joy_linuxConfig-version.cmake
+[8.386s] -- Installing: /home/poom/abu_ws/install/joy_linux/share/joy_linux/package.xml
+[8.392s] Invoked command in '/home/poom/abu_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy_linux

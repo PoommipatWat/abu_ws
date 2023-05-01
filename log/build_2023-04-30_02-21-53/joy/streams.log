@@ -1,0 +1,92 @@
+[0.015s] Invoking command in '/home/poom/abu_ws/build/joy': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy
+[0.077s] -- The C compiler identification is GNU 9.4.0
+[0.122s] -- The CXX compiler identification is GNU 9.4.0
+[0.130s] -- Detecting C compiler ABI info
+[0.175s] -- Detecting C compiler ABI info - done
+[0.183s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.183s] -- Detecting C compile features
+[0.183s] -- Detecting C compile features - done
+[0.186s] -- Detecting CXX compiler ABI info
+[0.244s] -- Detecting CXX compiler ABI info - done
+[0.254s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.255s] -- Detecting CXX compile features
+[0.255s] -- Detecting CXX compile features - done
+[0.257s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/foxy/share/ament_cmake_ros/cmake)
+[0.287s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.287s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.475s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+[0.515s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.521s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.577s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.606s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.670s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.716s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.718s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.719s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.764s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.764s] -- Looking for pthread_create in pthreads
+[0.800s] -- Looking for pthread_create in pthreads - not found
+[0.800s] -- Looking for pthread_create in pthread
+[0.843s] -- Looking for pthread_create in pthread - found
+[0.844s] -- Found Threads: TRUE  
+[0.964s] -- Found rclcpp_components: 2.4.2 (/opt/ros/foxy/share/rclcpp_components/cmake)
+[1.013s] -- Found sdl2_vendor: 3.0.1 (/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake)
+[1.016s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+[1.116s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.205s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.205s] -- Configured cppcheck include dirs: /home/poom/abu_ws/src/joystick_drivers/joy/include
+[1.205s] -- Configured cppcheck exclude dirs and/or files: 
+[1.207s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.207s] -- Configured cpplint exclude dirs and/or files: 
+[1.207s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.208s] -- Added test 'lint_cmake' to check CMake code style
+[1.209s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.211s] -- Added test 'uncrustify' to check C / C++ code style
+[1.211s] -- Configured uncrustify additional arguments: 
+[1.212s] -- Added test 'xmllint' to check XML markup files
+[1.214s] -- Configuring done (1.2s)
+[1.232s] -- Generating done (0.0s)
+[1.235s] -- Build files have been written to: /home/poom/abu_ws/build/joy
+[1.252s] Invoked command in '/home/poom/abu_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy
+[1.254s] Invoking command in '/home/poom/abu_ws/build/joy': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy -- -j12 -l12
+[1.290s] [ 16%] [32mBuilding CXX object CMakeFiles/joy.dir/src/joy.cpp.o[0m
+[1.293s] [ 33%] [32mBuilding CXX object CMakeFiles/joy_enumerate_devices.dir/src/joy_enumerate_devices.cpp.o[0m
+[1.293s] [ 50%] [32mBuilding CXX object CMakeFiles/joy_node.dir/rclcpp_components/node_main_joy_node.cpp.o[0m
+[1.990s] [ 66%] [32m[1mLinking CXX executable joy_enumerate_devices[0m
+[2.127s] [ 66%] Built target joy_enumerate_devices
+[3.718s] [ 83%] [32m[1mLinking CXX executable joy_node[0m
+[3.813s] [ 83%] Built target joy_node
+[7.214s] [100%] [32m[1mLinking CXX shared library libjoy.so[0m
+[7.413s] [100%] Built target joy
+[7.421s] Invoked command in '/home/poom/abu_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy -- -j12 -l12
+[7.463s] Invoking command in '/home/poom/abu_ws/build/joy': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy
+[7.483s] -- Install configuration: ""
+[7.483s] -- Installing: /home/poom/abu_ws/install/joy/lib/libjoy.so
+[7.486s] -- Set runtime path of "/home/poom/abu_ws/install/joy/lib/libjoy.so" to ""
+[7.486s] -- Installing: /home/poom/abu_ws/install/joy/lib/joy/joy_node
+[7.486s] -- Set runtime path of "/home/poom/abu_ws/install/joy/lib/joy/joy_node" to ""
+[7.486s] -- Installing: /home/poom/abu_ws/install/joy/lib/joy/joy_enumerate_devices
+[7.486s] -- Installing: /home/poom/abu_ws/install/joy/include/joy
+[7.486s] -- Installing: /home/poom/abu_ws/install/joy/include/joy/joy.hpp
+[7.487s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/config
+[7.487s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/config/joy-params.yaml
+[7.487s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/launch
+[7.487s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/launch/joy-composed-launch.py
+[7.487s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/launch/joy-launch.py
+[7.487s] -- Installing: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/package_run_dependencies/joy
+[7.488s] -- Installing: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/parent_prefix_path/joy
+[7.488s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/environment/ament_prefix_path.sh
+[7.488s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/environment/ament_prefix_path.dsv
+[7.488s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/environment/path.sh
+[7.488s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/environment/path.dsv
+[7.488s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/local_setup.bash
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/local_setup.sh
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/local_setup.zsh
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/local_setup.dsv
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/package.dsv
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/packages/joy
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/rclcpp_components/joy
+[7.489s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/cmake/joyConfig.cmake
+[7.490s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/cmake/joyConfig-version.cmake
+[7.490s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/package.xml
+[7.495s] Invoked command in '/home/poom/abu_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy

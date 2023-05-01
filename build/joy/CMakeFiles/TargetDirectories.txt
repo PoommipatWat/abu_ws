@@ -1,0 +1,12 @@
+/home/poom/abu_ws/build/joy/CMakeFiles/uninstall.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/joy_uninstall.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/joy.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/joy_node.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/joy_enumerate_devices.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/test.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/edit_cache.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/rebuild_cache.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/list_install_components.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/install.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/install/local.dir
+/home/poom/abu_ws/build/joy/CMakeFiles/install/strip.dir

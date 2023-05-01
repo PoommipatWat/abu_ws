@@ -1,0 +1,38 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done (0.7s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/poom/abu_ws/build/sdl2_vendor
+-- Install configuration: ""
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/Modules
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/Modules/Findsdl2_custom.cmake
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/ament_index/resource_index/package_run_dependencies/sdl2_vendor
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/ament_index/resource_index/parent_prefix_path/sdl2_vendor
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/ament_prefix_path.sh
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/ament_prefix_path.dsv
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/path.sh
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/path.dsv
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.bash
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.sh
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.zsh
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.dsv
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/ament_index/resource_index/packages/sdl2_vendor
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendor-extras.cmake
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendorConfig.cmake
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendorConfig-version.cmake
+-- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.xml

@@ -1,0 +1,44 @@
+[0.046s] Invoking command in '/home/poom/abu_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/sdl2_vendor -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/sdl2_vendor
+[0.276s] -- The C compiler identification is GNU 9.4.0
+[0.284s] -- The CXX compiler identification is GNU 9.4.0
+[0.298s] -- Detecting C compiler ABI info
+[0.351s] -- Detecting C compiler ABI info - done
+[0.360s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.360s] -- Detecting C compile features
+[0.360s] -- Detecting C compile features - done
+[0.364s] -- Detecting CXX compiler ABI info
+[0.420s] -- Detecting CXX compiler ABI info - done
+[0.429s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.429s] -- Detecting CXX compile features
+[0.430s] -- Detecting CXX compile features - done
+[0.436s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.461s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.461s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.747s] -- Configuring done (0.7s)
+[0.749s] -- Generating done (0.0s)
+[0.750s] -- Build files have been written to: /home/poom/abu_ws/build/sdl2_vendor
+[0.759s] Invoked command in '/home/poom/abu_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/sdl2_vendor -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/sdl2_vendor
+[0.762s] Invoking command in '/home/poom/abu_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/sdl2_vendor -- -j12 -l12
+[0.799s] Invoked command in '/home/poom/abu_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/sdl2_vendor -- -j12 -l12
+[0.866s] Invoking command in '/home/poom/abu_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/sdl2_vendor
+[0.891s] -- Install configuration: ""
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/Modules
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/Modules/Findsdl2_custom.cmake
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/ament_index/resource_index/package_run_dependencies/sdl2_vendor
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/ament_index/resource_index/parent_prefix_path/sdl2_vendor
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/ament_prefix_path.sh
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/ament_prefix_path.dsv
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/path.sh
+[0.891s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/environment/path.dsv
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.bash
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.sh
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.zsh
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/local_setup.dsv
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/ament_index/resource_index/packages/sdl2_vendor
+[0.892s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendor-extras.cmake
+[0.893s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendorConfig.cmake
+[0.893s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/cmake/sdl2_vendorConfig-version.cmake
+[0.893s] -- Installing: /home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.xml
+[0.902s] Invoked command in '/home/poom/abu_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/sdl2_vendor

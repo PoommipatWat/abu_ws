@@ -1,0 +1,43 @@
+[0.014s] Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote -- -j12 -l12
+[0.060s] [ 44%] Built target teleop_wiimote_node
+[0.060s] [ 44%] Built target wiimote_node
+[0.061s] [ 77%] Built target wiimote_lib
+[0.074s] [100%] Built target teleop_wiimote
+[0.082s] Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote -- -j12 -l12
+[0.134s] Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote
+[0.159s] -- Install configuration: ""
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/wiimote/teleop_wiimote_node
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/libwiimote_lib.so
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/libteleop_wiimote.so
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/include
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/include/wiimote
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/include/wiimote/stat_vector_3d.hpp
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/include/wiimote/teleop_wiimote.hpp
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/include/wiimote/wiimote_controller.hpp
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/launch
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/turtlesim.launch.py
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/feedback_test.launch.py
+[0.160s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/wiimote_lifecycle.launch.py
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/config
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/config/wiimote_params.yaml
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/config/teleop_wiimote_params.yaml
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/wiimote/feedback_tester.py
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/package_run_dependencies/wiimote
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/parent_prefix_path/wiimote
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.sh
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.dsv
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/path.sh
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/path.dsv
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.bash
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.sh
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.zsh
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.dsv
+[0.161s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/package.dsv
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/packages/wiimote
+[0.161s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/rclcpp_components/wiimote
+[0.162s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig.cmake
+[0.162s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig-version.cmake
+[0.162s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/share/wiimote/package.xml
+[0.168s] Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote

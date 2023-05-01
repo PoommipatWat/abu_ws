@@ -1,0 +1,106 @@
+[0.012s] Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/wiimote -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/wiimote
+[0.069s] -- The C compiler identification is GNU 9.4.0
+[0.110s] -- The CXX compiler identification is GNU 9.4.0
+[0.117s] -- Detecting C compiler ABI info
+[0.158s] -- Detecting C compiler ABI info - done
+[0.167s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.168s] -- Detecting C compile features
+[0.168s] -- Detecting C compile features - done
+[0.171s] -- Detecting CXX compiler ABI info
+[0.217s] -- Detecting CXX compiler ABI info - done
+[0.227s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.228s] -- Detecting CXX compile features
+[0.228s] -- Detecting CXX compile features - done
+[0.234s] -- Found bluetooth library.
+[0.235s] -- Found cwiid library.
+[0.237s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+[0.259s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.259s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.426s] -- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+[0.532s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.538s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+[0.593s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.618s] -- Found FastRTPS: /opt/ros/foxy/include  
+[0.679s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.722s] -- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+[0.723s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.724s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.769s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[0.769s] -- Looking for pthread_create in pthreads
+[0.804s] -- Looking for pthread_create in pthreads - not found
+[0.804s] -- Looking for pthread_create in pthread
+[0.846s] -- Looking for pthread_create in pthread - found
+[0.847s] -- Found Threads: TRUE  
+[1.192s] -- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.210s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.212s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.212s] -- Configured cppcheck include dirs: /home/poom/abu_ws/src/joystick_drivers/wiimote/include
+[1.212s] -- Configured cppcheck exclude dirs and/or files: 
+[1.214s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.214s] -- Configured cpplint exclude dirs and/or files: 
+[1.214s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.215s] -- Added test 'lint_cmake' to check CMake code style
+[1.215s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.216s] -- Added test 'uncrustify' to check C / C++ code style
+[1.216s] -- Configured uncrustify additional arguments: 
+[1.217s] -- Added test 'xmllint' to check XML markup files
+[1.218s] -- Configuring done (1.2s)
+[1.234s] -- Generating done (0.0s)
+[1.235s] -- Build files have been written to: /home/poom/abu_ws/build/wiimote
+[1.247s] Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/wiimote -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/wiimote
+[1.249s] Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote -- -j12 -l12
+[1.286s] [ 11%] [32mBuilding CXX object CMakeFiles/wiimote_node.dir/rclcpp_components/node_main_wiimote_node.cpp.o[0m
+[1.286s] [ 22%] [32mBuilding CXX object CMakeFiles/wiimote_lib.dir/src/wiimote_controller.cpp.o[0m
+[1.286s] [ 33%] [32mBuilding CXX object CMakeFiles/teleop_wiimote_node.dir/rclcpp_components/node_main_teleop_wiimote_node.cpp.o[0m
+[1.286s] [ 44%] [32mBuilding CXX object CMakeFiles/wiimote_lib.dir/src/stat_vector_3d.cpp.o[0m
+[2.880s] [ 55%] [32m[1mLinking CXX executable teleop_wiimote_node[0m
+[2.935s] [ 66%] [32m[1mLinking CXX executable wiimote_node[0m
+[2.960s] [ 66%] Built target teleop_wiimote_node
+[3.010s] [ 66%] Built target wiimote_node
+[7.104s] [ 77%] [32m[1mLinking CXX shared library libwiimote_lib.so[0m
+[7.350s] [ 77%] Built target wiimote_lib
+[7.357s] [ 88%] [32mBuilding CXX object CMakeFiles/teleop_wiimote.dir/src/teleop_wiimote.cpp.o[0m
+[12.707s] [100%] [32m[1mLinking CXX shared library libteleop_wiimote.so[0m
+[12.940s] [100%] Built target teleop_wiimote
+[12.959s] Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote -- -j12 -l12
+[13.029s] Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote
+[13.052s] -- Install configuration: ""
+[13.053s] -- Installing: /home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node
+[13.053s] -- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node" to ""
+[13.054s] -- Installing: /home/poom/abu_ws/install/wiimote/lib/wiimote/teleop_wiimote_node
+[13.055s] -- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/wiimote/teleop_wiimote_node" to ""
+[13.055s] -- Installing: /home/poom/abu_ws/install/wiimote/lib/libwiimote_lib.so
+[13.063s] -- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/libwiimote_lib.so" to ""
+[13.063s] -- Installing: /home/poom/abu_ws/install/wiimote/lib/libteleop_wiimote.so
+[13.066s] -- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/libteleop_wiimote.so" to ""
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/include
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote/stat_vector_3d.hpp
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote/teleop_wiimote.hpp
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote/wiimote_controller.hpp
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch
+[13.066s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/turtlesim.launch.py
+[13.076s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/feedback_test.launch.py
+[13.076s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/wiimote_lifecycle.launch.py
+[13.077s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/config
+[13.077s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/config/wiimote_params.yaml
+[13.077s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/config/teleop_wiimote_params.yaml
+[13.077s] -- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node
+[13.077s] -- Installing: /home/poom/abu_ws/install/wiimote/lib/wiimote/feedback_tester.py
+[13.077s] -- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/package_run_dependencies/wiimote
+[13.077s] -- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/parent_prefix_path/wiimote
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.sh
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.dsv
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/path.sh
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/path.dsv
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.bash
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.sh
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.zsh
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.dsv
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/package.dsv
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/packages/wiimote
+[13.078s] -- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/rclcpp_components/wiimote
+[13.079s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig.cmake
+[13.079s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig-version.cmake
+[13.079s] -- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/package.xml
+[13.085s] Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote

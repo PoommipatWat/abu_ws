@@ -1,0 +1,100 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found bluetooth library.
+-- Found cwiid library.
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found ament_cmake_auto: 0.9.11 (/opt/ros/foxy/share/ament_cmake_auto/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_lint_auto: 0.9.8 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/poom/abu_ws/src/joystick_drivers/wiimote/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/poom/abu_ws/build/wiimote
+[ 11%] [32mBuilding CXX object CMakeFiles/wiimote_node.dir/rclcpp_components/node_main_wiimote_node.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/wiimote_lib.dir/src/wiimote_controller.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/teleop_wiimote_node.dir/rclcpp_components/node_main_teleop_wiimote_node.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/wiimote_lib.dir/src/stat_vector_3d.cpp.o[0m
+[ 55%] [32m[1mLinking CXX executable teleop_wiimote_node[0m
+[ 66%] [32m[1mLinking CXX executable wiimote_node[0m
+[ 66%] Built target teleop_wiimote_node
+[ 66%] Built target wiimote_node
+[ 77%] [32m[1mLinking CXX shared library libwiimote_lib.so[0m
+[ 77%] Built target wiimote_lib
+[ 88%] [32mBuilding CXX object CMakeFiles/teleop_wiimote.dir/src/teleop_wiimote.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libteleop_wiimote.so[0m
+[100%] Built target teleop_wiimote
+-- Install configuration: ""
+-- Installing: /home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node
+-- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node" to ""
+-- Installing: /home/poom/abu_ws/install/wiimote/lib/wiimote/teleop_wiimote_node
+-- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/wiimote/teleop_wiimote_node" to ""
+-- Installing: /home/poom/abu_ws/install/wiimote/lib/libwiimote_lib.so
+-- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/libwiimote_lib.so" to ""
+-- Installing: /home/poom/abu_ws/install/wiimote/lib/libteleop_wiimote.so
+-- Set runtime path of "/home/poom/abu_ws/install/wiimote/lib/libteleop_wiimote.so" to ""
+-- Installing: /home/poom/abu_ws/install/wiimote/include
+-- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote
+-- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote/stat_vector_3d.hpp
+-- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote/teleop_wiimote.hpp
+-- Installing: /home/poom/abu_ws/install/wiimote/include/wiimote/wiimote_controller.hpp
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/turtlesim.launch.py
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/feedback_test.launch.py
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/launch/wiimote_lifecycle.launch.py
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/config
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/config/wiimote_params.yaml
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/config/teleop_wiimote_params.yaml
+-- Up-to-date: /home/poom/abu_ws/install/wiimote/lib/wiimote/wiimote_node
+-- Installing: /home/poom/abu_ws/install/wiimote/lib/wiimote/feedback_tester.py
+-- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/package_run_dependencies/wiimote
+-- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/parent_prefix_path/wiimote
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.sh
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/ament_prefix_path.dsv
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/path.sh
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/environment/path.dsv
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.bash
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.sh
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.zsh
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/local_setup.dsv
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/package.dsv
+-- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/packages/wiimote
+-- Installing: /home/poom/abu_ws/install/wiimote/share/ament_index/resource_index/rclcpp_components/wiimote
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig.cmake
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/cmake/wiimoteConfig-version.cmake
+-- Installing: /home/poom/abu_ws/install/wiimote/share/wiimote/package.xml

@@ -1,0 +1,621 @@
+[0.422s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.422s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f89ea4ffeb0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f89ea4ffeb0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f89ea50c460>)
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.462s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.462s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/poom/abu_ws'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extensions ['ignore', 'ignore_ament_install']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'ignore'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extensions ['colcon_pkg']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'colcon_pkg'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extensions ['colcon_meta']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'colcon_meta'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extensions ['ros']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'ros'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extensions ['cmake', 'python']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'cmake'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'python'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extensions ['python_setup_py']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(ABU_2) by extension 'python_setup_py'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extension 'ignore'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extensions ['colcon_pkg']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extension 'colcon_pkg'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extensions ['colcon_meta']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extension 'colcon_meta'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extensions ['ros']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/abu_package) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'src/abu_package' with type 'ros.ament_python' and name 'abu_package'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['colcon_meta']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'colcon_meta'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['ros']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'ros'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['cmake', 'python']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'cmake'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'python'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extensions ['python_setup_py']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers) by extension 'python_setup_py'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['colcon_meta']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy) by extension 'ros'
+[0.478s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/joy' with type 'ros.ament_cmake' and name 'joy'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['ignore', 'ignore_ament_install']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'ignore'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'ignore_ament_install'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['colcon_pkg']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'colcon_pkg'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['colcon_meta']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'colcon_meta'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extensions ['ros']
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joy_linux) by extension 'ros'
+[0.479s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/joy_linux' with type 'ros.ament_cmake' and name 'joy_linux'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'ignore_ament_install'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['colcon_pkg']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'colcon_pkg'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['colcon_meta']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'colcon_meta'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extensions ['ros']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) by extension 'ros'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/joystick_drivers) ignored
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) by extension 'ros'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/ps3joy) ignored
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/sdl2_vendor) by extension 'ros'
+[0.481s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/sdl2_vendor' with type 'ros.ament_cmake' and name 'sdl2_vendor'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'ignore_ament_install'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['colcon_pkg']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'colcon_pkg'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['colcon_meta']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'colcon_meta'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extensions ['ros']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/spacenav) by extension 'ros'
+[0.482s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/spacenav' with type 'ros.ament_cmake' and name 'spacenav'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['ignore', 'ignore_ament_install']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'ignore'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'ignore_ament_install'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['colcon_pkg']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'colcon_pkg'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['colcon_meta']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote) by extension 'ros'
+[0.483s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/wiimote' with type 'ros.ament_cmake' and name 'wiimote'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'ignore'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'ignore_ament_install'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['colcon_pkg']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'colcon_pkg'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['colcon_meta']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'colcon_meta'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extensions ['ros']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/joystick_drivers/wiimote_msgs) by extension 'ros'
+[0.484s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joystick_drivers/wiimote_msgs' with type 'ros.ament_cmake' and name 'wiimote_msgs'
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.506s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/poom/abu_ws/install
+[0.507s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/poom/joy_ws/install
+[0.508s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/poom/orb_ws/install
+[0.508s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/poom/microros_ws/install
+[0.510s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 262 installed packages in /opt/ros/foxy
+[0.511s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.576s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'sdl2_vendor' is in: /home/poom/joy_ws/install/sdl2_vendor, /opt/ros/foxy
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding sdl2_vendor
+
+This may be promoted to an error in a future release of colcon-override-check.
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'cmake_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'cmake_target' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.577s] Level 5:colcon.colcon_core.verb:set package 'abu_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.577s] DEBUG:colcon.colcon_core.verb:Building package 'abu_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/abu_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/abu_package', 'merge_install': False, 'path': '/home/poom/abu_ws/src/abu_package', 'symlink_install': False, 'test_result_base': None}
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_target' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_clean_cache' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_clean_first' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'cmake_force_configure' from command line to 'False'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'ament_cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'catkin_cmake_args' from command line to 'None'
+[0.578s] Level 5:colcon.colcon_core.verb:set package 'joy_linux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.578s] DEBUG:colcon.colcon_core.verb:Building package 'joy_linux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/joy_linux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/joy_linux', 'merge_install': False, 'path': '/home/poom/abu_ws/src/joystick_drivers/joy_linux', 'symlink_install': False, 'test_result_base': None}
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_args' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_target' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_clean_first' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'cmake_force_configure' from command line to 'False'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'ament_cmake_args' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.579s] Level 5:colcon.colcon_core.verb:set package 'sdl2_vendor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.579s] DEBUG:colcon.colcon_core.verb:Building package 'sdl2_vendor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/sdl2_vendor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/sdl2_vendor', 'merge_install': False, 'path': '/home/poom/abu_ws/src/joystick_drivers/sdl2_vendor', 'symlink_install': False, 'test_result_base': None}
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_args' from command line to 'None'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_target' from command line to 'None'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_clean_first' from command line to 'False'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'cmake_force_configure' from command line to 'False'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'ament_cmake_args' from command line to 'None'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'spacenav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.580s] DEBUG:colcon.colcon_core.verb:Building package 'spacenav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/spacenav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/spacenav', 'merge_install': False, 'path': '/home/poom/abu_ws/src/joystick_drivers/spacenav', 'symlink_install': False, 'test_result_base': None}
+[0.580s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_target' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'wiimote_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.581s] DEBUG:colcon.colcon_core.verb:Building package 'wiimote_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/wiimote_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/wiimote_msgs', 'merge_install': False, 'path': '/home/poom/abu_ws/src/joystick_drivers/wiimote_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_target' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_clean_first' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'cmake_force_configure' from command line to 'False'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'ament_cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.581s] Level 5:colcon.colcon_core.verb:set package 'joy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.581s] DEBUG:colcon.colcon_core.verb:Building package 'joy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/joy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/joy', 'merge_install': False, 'path': '/home/poom/abu_ws/src/joystick_drivers/joy', 'symlink_install': False, 'test_result_base': None}
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_args' from command line to 'None'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_target' from command line to 'None'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_clean_cache' from command line to 'False'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_clean_first' from command line to 'False'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'cmake_force_configure' from command line to 'False'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'ament_cmake_args' from command line to 'None'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'catkin_cmake_args' from command line to 'None'
+[0.582s] Level 5:colcon.colcon_core.verb:set package 'wiimote' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.582s] DEBUG:colcon.colcon_core.verb:Building package 'wiimote' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/poom/abu_ws/build/wiimote', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/poom/abu_ws/install/wiimote', 'merge_install': False, 'path': '/home/poom/abu_ws/src/joystick_drivers/wiimote', 'symlink_install': False, 'test_result_base': None}
+[0.583s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.585s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/poom/abu_ws/src/joystick_drivers/sdl2_vendor' with build type 'ament_cmake'
+[0.586s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/poom/abu_ws/src/joystick_drivers/sdl2_vendor'
+[0.591s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.591s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.591s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.598s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/poom/abu_ws/src/joystick_drivers/wiimote_msgs' with build type 'ament_cmake'
+[0.598s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/poom/abu_ws/src/joystick_drivers/wiimote_msgs'
+[0.599s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.599s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.605s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/poom/abu_ws/src/abu_package' with build type 'ament_python'
+[0.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('abu_package', 'ament_prefix_path')
+[0.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/abu_package/share/abu_package/hook/ament_prefix_path.ps1'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/abu_package/share/abu_package/hook/ament_prefix_path.dsv'
+[0.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/abu_package/share/abu_package/hook/ament_prefix_path.sh'
+[0.609s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.609s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/poom/abu_ws/src/joystick_drivers/joy_linux' with build type 'ament_cmake'
+[0.615s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/poom/abu_ws/src/joystick_drivers/joy_linux'
+[0.616s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.616s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.622s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/poom/abu_ws/src/joystick_drivers/spacenav' with build type 'ament_cmake'
+[0.622s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/poom/abu_ws/src/joystick_drivers/spacenav'
+[0.624s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.624s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.632s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/sdl2_vendor -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/sdl2_vendor
+[0.639s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/wiimote_msgs -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/wiimote_msgs
+[0.840s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/poom/abu_ws/src/abu_package'
+[0.842s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.842s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy_linux -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy_linux
+[0.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/spacenav -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/spacenav
+[1.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/src/abu_package': PYTHONPATH=/home/poom/abu_ws/build/abu_package/prefix_override:/home/poom/abu_ws/install/abu_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/abu_package build --build-base /home/poom/abu_ws/build/abu_package/build install --record /home/poom/abu_ws/build/abu_package/install.log --install-scripts $base/lib/abu_package --single-version-externally-managed
+[1.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/sdl2_vendor -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/sdl2_vendor
+[1.349s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/sdl2_vendor -- -j12 -l12
+[1.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/sdl2_vendor -- -j12 -l12
+[1.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/sdl2_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/sdl2_vendor
+[1.488s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sdl2_vendor)
+[1.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/sdl2_vendor' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/sdl2_vendor
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor' for CMake module files
+[1.497s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor' for CMake config files
+[1.497s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdl2_vendor', 'cmake_prefix_path')
+[1.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.ps1'
+[1.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.dsv'
+[1.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.sh'
+[1.499s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/bin'
+[1.499s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/lib/pkgconfig/sdl2_vendor.pc'
+[1.500s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/lib/python3.8/site-packages'
+[1.500s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/bin'
+[1.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.ps1'
+[1.502s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv'
+[1.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.sh'
+[1.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.bash'
+[1.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.zsh'
+[1.504s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/sdl2_vendor/share/colcon-core/packages/sdl2_vendor)
+[1.544s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sdl2_vendor)
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor' for CMake module files
+[1.547s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor' for CMake config files
+[1.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('sdl2_vendor', 'cmake_prefix_path')
+[1.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.ps1'
+[1.549s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.dsv'
+[1.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/hook/cmake_prefix_path.sh'
+[1.550s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/bin'
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/lib/pkgconfig/sdl2_vendor.pc'
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/lib/python3.8/site-packages'
+[1.551s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/sdl2_vendor/bin'
+[1.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.ps1'
+[1.553s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.dsv'
+[1.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.sh'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.bash'
+[1.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/sdl2_vendor/share/sdl2_vendor/package.zsh'
+[1.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/sdl2_vendor/share/colcon-core/packages/sdl2_vendor)
+[1.555s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/poom/abu_ws/src/joystick_drivers/joy' with build type 'ament_cmake'
+[1.555s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/poom/abu_ws/src/joystick_drivers/joy'
+[1.556s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.556s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/joy': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package' for CMake module files
+[1.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/src/abu_package' returned '0': PYTHONPATH=/home/poom/abu_ws/build/abu_package/prefix_override:/home/poom/abu_ws/install/abu_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/abu_package build --build-base /home/poom/abu_ws/build/abu_package/build install --record /home/poom/abu_ws/build/abu_package/install.log --install-scripts $base/lib/abu_package --single-version-externally-managed
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package' for CMake config files
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package/lib'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package/bin'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package/lib/pkgconfig/abu_package.pc'
+[1.602s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package/lib/python3.8/site-packages'
+[1.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('abu_package', 'pythonpath')
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/abu_package/share/abu_package/hook/pythonpath.ps1'
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/abu_package/share/abu_package/hook/pythonpath.dsv'
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/abu_package/share/abu_package/hook/pythonpath.sh'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/abu_package/bin'
+[1.605s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(abu_package)
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/abu_package/share/abu_package/package.ps1'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/abu_package/share/abu_package/package.dsv'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/abu_package/share/abu_package/package.sh'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/abu_package/share/abu_package/package.bash'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/abu_package/share/abu_package/package.zsh'
+[1.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/abu_package/share/colcon-core/packages/abu_package)
+[2.149s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/spacenav -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/spacenav
+[2.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/spacenav -- -j12 -l12
+[2.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy_linux -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy_linux
+[2.194s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy_linux -- -j12 -l12
+[2.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/wiimote_msgs -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/wiimote_msgs
+[2.340s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote_msgs -- -j12 -l12
+[2.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/joy -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/joy
+[2.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/joy': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy -- -j12 -l12
+[6.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/spacenav -- -j12 -l12
+[6.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/spacenav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/spacenav
+[6.736s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spacenav)
+[6.739s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav' for CMake module files
+[6.740s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/spacenav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/spacenav
+[6.740s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav' for CMake config files
+[6.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'cmake_prefix_path')
+[6.743s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.ps1'
+[6.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.dsv'
+[6.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.sh'
+[6.744s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/lib'
+[6.744s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'ld_library_path_lib')
+[6.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.ps1'
+[6.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.dsv'
+[6.747s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.sh'
+[6.748s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/bin'
+[6.748s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/lib/pkgconfig/spacenav.pc'
+[6.748s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/lib/python3.8/site-packages'
+[6.748s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/bin'
+[6.750s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.ps1'
+[6.751s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/spacenav/share/spacenav/package.dsv'
+[6.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.sh'
+[6.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.bash'
+[6.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.zsh'
+[6.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/spacenav/share/colcon-core/packages/spacenav)
+[6.795s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(spacenav)
+[6.797s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav' for CMake module files
+[6.797s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav' for CMake config files
+[6.797s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'cmake_prefix_path')
+[6.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.ps1'
+[6.799s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.dsv'
+[6.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/cmake_prefix_path.sh'
+[6.800s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/lib'
+[6.800s] Level 1:colcon.colcon_core.shell:create_environment_hook('spacenav', 'ld_library_path_lib')
+[6.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.ps1'
+[6.802s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.dsv'
+[6.802s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/spacenav/share/spacenav/hook/ld_library_path_lib.sh'
+[6.802s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/bin'
+[6.802s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/lib/pkgconfig/spacenav.pc'
+[6.803s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/lib/python3.8/site-packages'
+[6.803s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/spacenav/bin'
+[6.805s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.ps1'
+[6.805s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/spacenav/share/spacenav/package.dsv'
+[6.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.sh'
+[6.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.bash'
+[6.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/spacenav/share/spacenav/package.zsh'
+[6.807s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/spacenav/share/colcon-core/packages/spacenav)
+[6.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote_msgs -- -j12 -l12
+[7.001s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/wiimote_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote_msgs
+[7.078s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote_msgs)
+[7.080s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs' for CMake module files
+[7.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/wiimote_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote_msgs
+[7.081s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs' for CMake config files
+[7.081s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'cmake_prefix_path')
+[7.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.ps1'
+[7.083s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.dsv'
+[7.083s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.sh'
+[7.083s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/lib'
+[7.083s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'ld_library_path_lib')
+[7.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.ps1'
+[7.085s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.dsv'
+[7.085s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.sh'
+[7.085s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/bin'
+[7.085s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/lib/pkgconfig/wiimote_msgs.pc'
+[7.086s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages'
+[7.086s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'pythonpath')
+[7.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.ps1'
+[7.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.dsv'
+[7.087s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.sh'
+[7.088s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/bin'
+[7.089s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.ps1'
+[7.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.dsv'
+[7.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.sh'
+[7.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.bash'
+[7.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.zsh'
+[7.090s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/wiimote_msgs/share/colcon-core/packages/wiimote_msgs)
+[7.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote_msgs)
+[7.166s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs' for CMake module files
+[7.166s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs' for CMake config files
+[7.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'cmake_prefix_path')
+[7.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.ps1'
+[7.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.dsv'
+[7.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/cmake_prefix_path.sh'
+[7.169s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/lib'
+[7.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'ld_library_path_lib')
+[7.170s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.ps1'
+[7.170s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.dsv'
+[7.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/ld_library_path_lib.sh'
+[7.171s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/bin'
+[7.171s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/lib/pkgconfig/wiimote_msgs.pc'
+[7.171s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages'
+[7.171s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote_msgs', 'pythonpath')
+[7.172s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.ps1'
+[7.173s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.dsv'
+[7.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/hook/pythonpath.sh'
+[7.173s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote_msgs/bin'
+[7.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.ps1'
+[7.175s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.dsv'
+[7.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.sh'
+[7.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.bash'
+[7.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote_msgs/share/wiimote_msgs/package.zsh'
+[7.176s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/wiimote_msgs/share/colcon-core/packages/wiimote_msgs)
+[7.176s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/poom/abu_ws/src/joystick_drivers/wiimote' with build type 'ament_cmake'
+[7.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/poom/abu_ws/src/joystick_drivers/wiimote'
+[7.177s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.177s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.190s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/wiimote -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/wiimote
+[8.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake /home/poom/abu_ws/src/joystick_drivers/wiimote -DCMAKE_INSTALL_PREFIX=/home/poom/abu_ws/install/wiimote
+[8.428s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote -- -j12 -l12
+[8.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy_linux -- -j12 -l12
+[8.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/joy_linux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy_linux
+[8.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy -- -j12 -l12
+[9.007s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_linux)
+[9.009s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux' for CMake module files
+[9.009s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/joy_linux' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy_linux
+[9.010s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux' for CMake config files
+[9.010s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_linux', 'cmake_prefix_path')
+[9.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.ps1'
+[9.012s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.dsv'
+[9.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.sh'
+[9.012s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/lib'
+[9.012s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/bin'
+[9.013s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/lib/pkgconfig/joy_linux.pc'
+[9.013s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/lib/python3.8/site-packages'
+[9.013s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/bin'
+[9.014s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.ps1'
+[9.015s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.dsv'
+[9.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.sh'
+[9.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.bash'
+[9.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.zsh'
+[9.016s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/joy_linux/share/colcon-core/packages/joy_linux)
+[9.021s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/joy': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy
+[9.050s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy)
+[9.052s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy' for CMake module files
+[9.053s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/joy' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy
+[9.053s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy' for CMake config files
+[9.053s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'cmake_prefix_path')
+[9.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/cmake_prefix_path.ps1'
+[9.055s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/joy/share/joy/hook/cmake_prefix_path.dsv'
+[9.055s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/cmake_prefix_path.sh'
+[9.055s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/lib'
+[9.055s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'ld_library_path_lib')
+[9.056s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/ld_library_path_lib.ps1'
+[9.057s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/joy/share/joy/hook/ld_library_path_lib.dsv'
+[9.057s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/ld_library_path_lib.sh'
+[9.057s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/bin'
+[9.057s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/lib/pkgconfig/joy.pc'
+[9.057s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/lib/python3.8/site-packages'
+[9.057s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/bin'
+[9.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.ps1'
+[9.059s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/joy/share/joy/package.dsv'
+[9.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.sh'
+[9.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.bash'
+[9.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.zsh'
+[9.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/joy/share/colcon-core/packages/joy)
+[9.064s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_linux)
+[9.065s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux' for CMake module files
+[9.066s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux' for CMake config files
+[9.066s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_linux', 'cmake_prefix_path')
+[9.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.ps1'
+[9.067s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.dsv'
+[9.067s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy_linux/share/joy_linux/hook/cmake_prefix_path.sh'
+[9.068s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/lib'
+[9.068s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/bin'
+[9.068s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/lib/pkgconfig/joy_linux.pc'
+[9.068s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/lib/python3.8/site-packages'
+[9.068s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy_linux/bin'
+[9.069s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.ps1'
+[9.069s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.dsv'
+[9.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.sh'
+[9.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.bash'
+[9.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy_linux/share/joy_linux/package.zsh'
+[9.071s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/joy_linux/share/colcon-core/packages/joy_linux)
+[9.100s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy)
+[9.102s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy' for CMake module files
+[9.102s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy' for CMake config files
+[9.103s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'cmake_prefix_path')
+[9.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/cmake_prefix_path.ps1'
+[9.104s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/joy/share/joy/hook/cmake_prefix_path.dsv'
+[9.105s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/cmake_prefix_path.sh'
+[9.105s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/lib'
+[9.105s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy', 'ld_library_path_lib')
+[9.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/ld_library_path_lib.ps1'
+[9.107s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/joy/share/joy/hook/ld_library_path_lib.dsv'
+[9.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/joy/share/joy/hook/ld_library_path_lib.sh'
+[9.107s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/bin'
+[9.107s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/lib/pkgconfig/joy.pc'
+[9.108s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/lib/python3.8/site-packages'
+[9.108s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/joy/bin'
+[9.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.ps1'
+[9.109s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/joy/share/joy/package.dsv'
+[9.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.sh'
+[9.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.bash'
+[9.110s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/joy/share/joy/package.zsh'
+[9.110s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/joy/share/colcon-core/packages/joy)
+[20.137s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/wiimote -- -j12 -l12
+[20.207s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/poom/abu_ws/build/wiimote': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote
+[20.262s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote)
+[20.263s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/poom/abu_ws/build/wiimote' returned '0': AMENT_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/wiimote_msgs:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy LD_LIBRARY_PATH=/home/poom/abu_ws/install/wiimote_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/poom/abu_ws/install/wiimote_msgs/lib/python3.8/site-packages:${PYTHONPATH} /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/wiimote
+[20.268s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote' for CMake module files
+[20.270s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote' for CMake config files
+[20.270s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'cmake_prefix_path')
+[20.272s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.ps1'
+[20.273s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.dsv'
+[20.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.sh'
+[20.273s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/lib'
+[20.273s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'ld_library_path_lib')
+[20.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.ps1'
+[20.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.dsv'
+[20.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.sh'
+[20.275s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/bin'
+[20.275s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/lib/pkgconfig/wiimote.pc'
+[20.275s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/lib/python3.8/site-packages'
+[20.275s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/bin'
+[20.276s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.ps1'
+[20.276s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/wiimote/share/wiimote/package.dsv'
+[20.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.sh'
+[20.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.bash'
+[20.277s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.zsh'
+[20.277s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/wiimote/share/colcon-core/packages/wiimote)
+[20.342s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(wiimote)
+[20.347s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote' for CMake module files
+[20.348s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote' for CMake config files
+[20.348s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'cmake_prefix_path')
+[20.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.ps1'
+[20.350s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.dsv'
+[20.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/cmake_prefix_path.sh'
+[20.351s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/lib'
+[20.351s] Level 1:colcon.colcon_core.shell:create_environment_hook('wiimote', 'ld_library_path_lib')
+[20.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.ps1'
+[20.352s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.dsv'
+[20.352s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/poom/abu_ws/install/wiimote/share/wiimote/hook/ld_library_path_lib.sh'
+[20.352s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/bin'
+[20.352s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/lib/pkgconfig/wiimote.pc'
+[20.353s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/lib/python3.8/site-packages'
+[20.353s] Level 1:colcon.colcon_core.environment:checking '/home/poom/abu_ws/install/wiimote/bin'
+[20.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.ps1'
+[20.354s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/poom/abu_ws/install/wiimote/share/wiimote/package.dsv'
+[20.354s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.sh'
+[20.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.bash'
+[20.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/poom/abu_ws/install/wiimote/share/wiimote/package.zsh'
+[20.355s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/poom/abu_ws/install/wiimote/share/colcon-core/packages/wiimote)
+[20.355s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[20.356s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[20.356s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[20.356s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[20.361s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[20.361s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[20.361s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[20.376s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[20.379s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/poom/abu_ws/install/local_setup.ps1'
+[20.380s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/poom/abu_ws/install/_local_setup_util_ps1.py'
+[20.381s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/poom/abu_ws/install/setup.ps1'
+[20.383s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/poom/abu_ws/install/local_setup.sh'
+[20.383s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/poom/abu_ws/install/_local_setup_util_sh.py'
+[20.383s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/poom/abu_ws/install/setup.sh'
+[20.385s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/poom/abu_ws/install/local_setup.bash'
+[20.385s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/poom/abu_ws/install/setup.bash'
+[20.387s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/poom/abu_ws/install/local_setup.zsh'
+[20.388s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/poom/abu_ws/install/setup.zsh'

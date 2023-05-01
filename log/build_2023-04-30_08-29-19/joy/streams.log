@@ -1,0 +1,34 @@
+[0.023s] Invoking command in '/home/poom/abu_ws/build/joy': CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/abu_ws/install/wiimote:/home/poom/abu_ws/install/wiimote_msgs:/home/poom/abu_ws/install/spacenav:/home/poom/abu_ws/install/joy:/home/poom/abu_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy -- -j12 -l12
+[0.061s] [ 33%] Built target joy_enumerate_devices
+[0.062s] [ 66%] Built target joy
+[0.062s] [100%] Built target joy_node
+[0.078s] Invoked command in '/home/poom/abu_ws/build/joy' returned '0': CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/abu_ws/install/wiimote:/home/poom/abu_ws/install/wiimote_msgs:/home/poom/abu_ws/install/spacenav:/home/poom/abu_ws/install/joy:/home/poom/abu_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --build /home/poom/abu_ws/build/joy -- -j12 -l12
+[0.128s] Invoking command in '/home/poom/abu_ws/build/joy': CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/abu_ws/install/wiimote:/home/poom/abu_ws/install/wiimote_msgs:/home/poom/abu_ws/install/spacenav:/home/poom/abu_ws/install/joy:/home/poom/abu_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy
+[0.152s] -- Install configuration: ""
+[0.152s] -- Up-to-date: /home/poom/abu_ws/install/joy/lib/libjoy.so
+[0.152s] -- Up-to-date: /home/poom/abu_ws/install/joy/lib/joy/joy_node
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/lib/joy/joy_enumerate_devices
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/include/joy
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/include/joy/joy.hpp
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/config
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/config/joy-params.yaml
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/launch
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/launch/joy-composed-launch.py
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/launch/joy-launch.py
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/package_run_dependencies/joy
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/parent_prefix_path/joy
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/environment/ament_prefix_path.sh
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/environment/ament_prefix_path.dsv
+[0.153s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/environment/path.sh
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/environment/path.dsv
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/local_setup.bash
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/local_setup.sh
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/local_setup.zsh
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/local_setup.dsv
+[0.154s] -- Installing: /home/poom/abu_ws/install/joy/share/joy/package.dsv
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/packages/joy
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/ament_index/resource_index/rclcpp_components/joy
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/cmake/joyConfig.cmake
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/cmake/joyConfig-version.cmake
+[0.154s] -- Up-to-date: /home/poom/abu_ws/install/joy/share/joy/package.xml
+[0.162s] Invoked command in '/home/poom/abu_ws/build/joy' returned '0': CMAKE_PREFIX_PATH=/home/poom/abu_ws/install/sdl2_vendor:/home/poom/joy_ws/install/wiimote:/home/poom/joy_ws/install/wiimote_msgs:/home/poom/joy_ws/install/spacenav:/home/poom/joy_ws/install/joy:/home/poom/joy_ws/install/sdl2_vendor:/home/poom/joy_ws/install/joy_linux:/home/poom/abu_ws/install/wiimote:/home/poom/abu_ws/install/wiimote_msgs:/home/poom/abu_ws/install/spacenav:/home/poom/abu_ws/install/joy:/home/poom/abu_ws/install/joy_linux:/home/poom/microros_ws/install/micro_ros_setup:/home/poom/microros_ws/install/micro_ros_agent:/home/poom/microros_ws/install/micro_ros_msgs:/home/poom/orb_ws/install/orb_slam2_ros:/home/poom/joy_ws/install/poom:/home/poom/abu_ws/install/abu_package:/opt/ros/foxy /home/poom/.local/bin/cmake --install /home/poom/abu_ws/build/joy
