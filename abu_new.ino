@@ -8,6 +8,7 @@
 #include <rmw_microros/rmw_microros.h>
 #include <geometry_msgs/msg/twist.h>
 
+
 #define LED_PIN 13
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){return false;}}
 #define EXECUTE_EVERY_N_MS(MS, X)  do { \
@@ -58,6 +59,9 @@ bool once = false;
 #define shoot_motor_top 15
 
 static uint32_t preTime;
+
+static uint32_t preT = 0;
+bool preTS = false;
 
 // linear.x = ล้อซ้ายหน้า 
 // linear.y = ล้อขวาหน้า
@@ -272,6 +276,8 @@ rclc_executor_t executor_sub;
 rcl_subscription_t subscriber;
 geometry_msgs__msg__Twist msg_sub;
 
+rcl_init_options_t init_options;
+
 bool micro_ros_init_successful;
 
 enum states {
@@ -312,9 +318,16 @@ void subscription_callback(const void *msgin) {
 bool create_entities()
 {
   allocator = rcl_get_default_allocator();
+  
+  init_options = rcl_get_zero_initialized_init_options();
+  rcl_init_options_init(&init_options, allocator);
+  rcl_init_options_set_domain_id(&init_options, 10);
+
+  rclc_support_init_with_options(&support, 0, NULL, &init_options, &allocator);
+
 
   // create init_options
-  RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
+  //RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
 
   // create node
   RCCHECK(rclc_node_init_default(&node, "int32_publisher_rclc", "", &support));
@@ -388,6 +401,8 @@ void renew(){
   digitalWrite(shoot_motor_top, LOW);
 }
 
+
+
 void setup() {
   set_microros_transports();
   pinMode(LED_PIN, OUTPUT);
@@ -412,7 +427,7 @@ void setup() {
 void loop() {
   switch (state) {
     case WAITING_AGENT:
-      EXECUTE_EVERY_N_MS(500, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_AVAILABLE : WAITING_AGENT;);
+      EXECUTE_EVERY_N_MS(200, state = (RMW_RET_OK == rmw_uros_ping_agent(100, 1)) ? AGENT_AVAILABLE : WAITING_AGENT;);
       break;
     case AGENT_AVAILABLE:
       state = (true == create_entities()) ? AGENT_CONNECTED : WAITING_AGENT;
@@ -438,7 +453,12 @@ void loop() {
   if (state == AGENT_CONNECTED) {
     digitalWrite(LED_PIN, 1);
   } else {
-    digitalWrite(LED_PIN, 0);
+    if(millis() - preT > 250){
+      if(preTS) digitalWrite(LED_PIN, HIGH);
+      else digitalWrite(LED_PIN, LOW);
+      preT = millis();
+      preTS = !preTS;
+    }
     renew();
   }
 }
