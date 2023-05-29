@@ -1,3 +1,3 @@
 import sys
 sys.real_prefix = sys.prefix
-sys.prefix = sys.exec_prefix = '/home/poom/abu_ws/install/abu_package'
+sys.prefix = sys.exec_prefix = '/home/poomnuc/abu_ws/install/abu_package'

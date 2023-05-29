@@ -1,0 +1,29 @@
+running egg_info
+writing ../../build/abu_package/abu_package.egg-info/PKG-INFO
+writing dependency_links to ../../build/abu_package/abu_package.egg-info/dependency_links.txt
+writing entry points to ../../build/abu_package/abu_package.egg-info/entry_points.txt
+writing requirements to ../../build/abu_package/abu_package.egg-info/requires.txt
+writing top-level names to ../../build/abu_package/abu_package.egg-info/top_level.txt
+reading manifest file '../../build/abu_package/abu_package.egg-info/SOURCES.txt'
+writing manifest file '../../build/abu_package/abu_package.egg-info/SOURCES.txt'
+running build
+running build_py
+copying abu_package/detectColor.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+copying abu_package/ps4.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+copying abu_package/shoot.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+copying abu_package/my_node.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+copying abu_package/ps4 (copy).py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+copying abu_package/feed.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+copying abu_package/__init__.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages/abu_package-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/abu_package/abu_package.egg-info to /home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages/abu_package-0.0.0-py3.8.egg-info
+running install_scripts
+Installing color_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+Installing drive_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+Installing feed_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+Installing shoot_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+writing list of installed files to '/home/poomnuc/abu_ws/build/abu_package/install.log'
