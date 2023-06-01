@@ -1,0 +1,27 @@
+[0.707s] Invoking command in '/home/poomnuc/abu_ws/src/abu_package': PYTHONPATH=/home/poomnuc/abu_ws/build/abu_package/prefix_override:/home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/abu_package build --build-base /home/poomnuc/abu_ws/build/abu_package/build install --record /home/poomnuc/abu_ws/build/abu_package/install.log --install-scripts $base/lib/abu_package --single-version-externally-managed
+[0.960s] running egg_info
+[0.961s] writing ../../build/abu_package/abu_package.egg-info/PKG-INFO
+[0.961s] writing dependency_links to ../../build/abu_package/abu_package.egg-info/dependency_links.txt
+[0.961s] writing entry points to ../../build/abu_package/abu_package.egg-info/entry_points.txt
+[0.961s] writing requirements to ../../build/abu_package/abu_package.egg-info/requires.txt
+[0.961s] writing top-level names to ../../build/abu_package/abu_package.egg-info/top_level.txt
+[1.002s] reading manifest file '../../build/abu_package/abu_package.egg-info/SOURCES.txt'
+[1.003s] writing manifest file '../../build/abu_package/abu_package.egg-info/SOURCES.txt'
+[1.003s] running build
+[1.003s] running build_py
+[1.003s] copying abu_package/ps4.py -> /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package
+[1.004s] running install
+[1.005s] running install_lib
+[1.007s] copying /home/poomnuc/abu_ws/build/abu_package/build/lib/abu_package/ps4.py -> /home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages/abu_package
+[1.007s] byte-compiling /home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages/abu_package/ps4.py to ps4.cpython-38.pyc
+[1.011s] running install_data
+[1.011s] running install_egg_info
+[1.013s] removing '/home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages/abu_package-0.0.0-py3.8.egg-info' (and everything under it)
+[1.014s] Copying ../../build/abu_package/abu_package.egg-info to /home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages/abu_package-0.0.0-py3.8.egg-info
+[1.015s] running install_scripts
+[1.036s] Installing color_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+[1.036s] Installing drive_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+[1.037s] Installing feed_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+[1.037s] Installing shoot_node script to /home/poomnuc/abu_ws/install/abu_package/lib/abu_package
+[1.037s] writing list of installed files to '/home/poomnuc/abu_ws/build/abu_package/install.log'
+[1.064s] Invoked command in '/home/poomnuc/abu_ws/src/abu_package' returned '0': PYTHONPATH=/home/poomnuc/abu_ws/build/abu_package/prefix_override:/home/poomnuc/abu_ws/install/abu_package/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/abu_package build --build-base /home/poomnuc/abu_ws/build/abu_package/build install --record /home/poomnuc/abu_ws/build/abu_package/install.log --install-scripts $base/lib/abu_package --single-version-externally-managed

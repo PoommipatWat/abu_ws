@@ -27,7 +27,8 @@ setup(
 		"drive_node = abu_package.ps4:main",
 		"shoot_node = abu_package:main",
 		"feed_node  = abu_package:main",
-		"color_node = abu_package.detectColor:main"
+		"color_node = abu_package.detectColor:main",
+        "imu_node   = abu_package.imu:main",
         ],
     },
 )
