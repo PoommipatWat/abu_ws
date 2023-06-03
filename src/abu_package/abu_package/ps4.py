@@ -286,13 +286,18 @@ class Ps4(Node):
 #//------------------------------------------------------------------------------------------------//		
 		if((self.button["R1"] == 1) and (self.counter == 0)):
 			self.state += 1
-			self.counter = 4
+			self.counter = 6
 		if(self.counter > 0):
 			self.counter -= 1
+		if((self.button["L2"] == 1) and (self.counter2 == 0)):
+			self.state -= 1
+			self.counter2 = 6
+		if(self.counter2 > 0):
+			self.counter2 -= 1
 		if(self.state > 5):
 			self.state = 0
 		if(self.state < 0):
-			self.state = 1
+			self.state = 5
 		if(self.state == 0):
 			self.pwm = self.param_pwm_motor1 - self.assis_shoot[0]
 		elif(self.state == 1):
