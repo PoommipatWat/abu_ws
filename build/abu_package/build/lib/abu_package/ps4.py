@@ -25,6 +25,9 @@ import time
 
 from simple_pid import PID
 
+from pathlib import Path
+import configparser
+
 class Ps4(Node):
 	def __init__(self):
 		super().__init__("xbox_control_node")
@@ -69,17 +72,22 @@ class Ps4(Node):
 		self.distance = 0.0
 		self.state_auto = 0
 
-		self.assis_shoot = 0
+		self.assis_shoot = [0,0,0,0,0,0]
 		self.list_debount_r = []
 		self.list_debount_l = []
 
 
-		self.param_pwm_motor1 = 110.0	# ค่าสำหรับห่วงไกล
-		self.param_pwm_motor2 = 90.0	# ค่าสำหรับห่วงใกล้
-		self.param_pwm_motor3 = 140.0
-		self.param_pwm_motor4 = 170.0
-		self.param_pwm_motor5 = 200.0
-		self.param_pwm_motor6 = 230.0								
+		home = str(Path.home())
+		file = '/config.ini'
+		self.file_path = home+file
+		self.config = configparser.ConfigParser()
+		self.config.read(self.file_path)
+		self.param_pwm_motor1 = float(self.config["DEFAULT"]["param1"])
+		self.param_pwm_motor2 = float(self.config["DEFAULT"]["param2"])
+		self.param_pwm_motor3 = float(self.config["DEFAULT"]["param3"])
+		self.param_pwm_motor4 = float(self.config["DEFAULT"]["param4"])
+		self.param_pwm_motor5 = float(self.config["DEFAULT"]["param5"])
+		self.param_pwm_motor6 = float(self.config["DEFAULT"]["param6"])	
 		self.param_distance = 10
 
 		for a in self.all:
@@ -105,6 +113,25 @@ class Ps4(Node):
 
 		self.start_time = datetime.datetime.now()
 		self.target_delta = datetime.timedelta(minutes=3, seconds=10)
+
+	def read_configs(self):
+		self.config.read(self.file_path)
+		a = {}
+		for i in range(6):
+			a[f"param{i+1}"] = float(self.config["DEFAULT"][f"param{i+1}"])
+		return a
+	def write_configs(self, index, val):
+		self.config.read(self.file_path)
+		self.config.set('DEFAULT', index, val)
+		with open(self.file_path, 'w') as config_file:
+			self.config.write(config_file)
+		self.param_pwm_motor1 = float(self.config["DEFAULT"]["param1"])
+		self.param_pwm_motor2 = float(self.config["DEFAULT"]["param2"])
+		self.param_pwm_motor3 = float(self.config["DEFAULT"]["param3"])
+		self.param_pwm_motor4 = float(self.config["DEFAULT"]["param4"])
+		self.param_pwm_motor5 = float(self.config["DEFAULT"]["param5"])
+		self.param_pwm_motor6 = float(self.config["DEFAULT"]["param6"])
+		self.assis_shoot[int(str(index)[-1])-1] = 0 
 
 	def image_callback(self, msg):
 		bridge = CvBridge()
@@ -251,15 +278,10 @@ class Ps4(Node):
 		msg.linear.y = float(round(rightFront*255))
 		msg.angular.x = float(round(leftBack*255))
 		msg.angular.y = float(round(rightBack*255))
-
-
+			
 #//------------------------------------------------------------------------------------------------//
-		if((self.button["S"] == 1) and (self.button["O"] == 1)):
-			self.assis_shoot = 0
-		elif(self.button["S"] == 1):
-			self.assis_shoot += 0.5
-		elif(self.button["O"] == 1):
-			self.assis_shoot -= 0.5
+		if(self.button["PS"] == 1):
+			self.write_configs(f"param{self.state+1}", str(self.pwm))
 
 #//------------------------------------------------------------------------------------------------//		
 		if((self.button["R1"] == 1) and (self.counter == 0)):
@@ -272,18 +294,17 @@ class Ps4(Node):
 		if(self.state < 0):
 			self.state = 1
 		if(self.state == 0):
-			self.pwm = self.param_pwm_motor2 - self.assis_shoot
+			self.pwm = self.param_pwm_motor1 - self.assis_shoot[0]
 		elif(self.state == 1):
-			self.pwm = self.param_pwm_motor1 - self.assis_shoot
+			self.pwm = self.param_pwm_motor2 - self.assis_shoot[1]
 		elif(self.state == 2):
-			self.pwm = self.param_pwm_motor3 - self.assis_shoot
+			self.pwm = self.param_pwm_motor3 - self.assis_shoot[2]
 		elif(self.state == 3):
-			self.pwm = self.param_pwm_motor4 - self.assis_shoot
+			self.pwm = self.param_pwm_motor4 - self.assis_shoot[3]
 		elif(self.state == 4):
-			self.pwm = self.param_pwm_motor5 - self.assis_shoot	
+			self.pwm = self.param_pwm_motor5 - self.assis_shoot[4]
 		elif(self.state == 5):
-			self.pwm = self.param_pwm_motor6 - self.assis_shoot
-
+			self.pwm = self.param_pwm_motor6 - self.assis_shoot[5]
 		if(self.pwm > 255):
 			self.pwm = 255.0
 		elif(self.pwm < 0):
@@ -291,6 +312,15 @@ class Ps4(Node):
 		
 		if(self.button["X"] == 1):
 			msg.linear.z = self.pwm
+#//------------------------------------------------------------------------------------------------//
+		if((self.button["S"] == 1) and (self.button["O"] == 1)):
+			self.assis_shoot[self.state] = 0
+		elif(self.button["S"] == 1):
+			self.assis_shoot[self.state] += 0.5
+		elif(self.button["O"] == 1):
+			self.assis_shoot[self.state] -= 0.5
+			
+
 #//------------------------------------------------------------------------------------------------//
 		
 		if(self.button["T"] == 1):
