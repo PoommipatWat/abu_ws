@@ -67,6 +67,8 @@ class Ps4(Node):
 		self.counter = 0
 		self.state2 = 0
 		self.counter2 = 0
+		self.counter3 = 0
+		self.stat_toggle = False
 
 
 		self.distance = 0.0
@@ -113,6 +115,8 @@ class Ps4(Node):
 
 		self.start_time = datetime.datetime.now()
 		self.target_delta = datetime.timedelta(minutes=3, seconds=10)
+		
+		self.toggle_mode =False
 
 	def read_configs(self):
 		self.config.read(self.file_path)
@@ -284,7 +288,7 @@ class Ps4(Node):
 			self.write_configs(f"param{self.state+1}", str(self.pwm))
 
 #//------------------------------------------------------------------------------------------------//		
-		if((self.button["R1"] == 1) and (self.counter == 0)):
+		if((self.button["R1"] == 1) and (self.counter == 0) and (self.button["L1"] == 0)):
 			self.state += 1
 			self.counter = 6
 		if(self.counter > 0):
@@ -294,6 +298,8 @@ class Ps4(Node):
 			self.counter2 = 6
 		if(self.counter2 > 0):
 			self.counter2 -= 1
+		if(self.counter3 > 0):
+			self.counter3 -= 1
 		if(self.state > 5):
 			self.state = 0
 		if(self.state < 0):
@@ -336,6 +342,21 @@ class Ps4(Node):
 			msg.angular.z = 20.0
 		elif(self.button["R2"] == 1):
 			msg.angular.z = 30.0
+		if(self.button["R1"] == 1 and self.button["L1"] == 1 and self.counter3 == 0):
+			msg.angular.z = 40.0
+			self.counter3 = 10
+			if(self.toggle_mode):
+				self.toggle_mode = False
+			else:
+				self.toggle_mode = True			
+			msg.linear.z = self.pwm
+		if(self.button["L1"] == 1 and self.button["R2"] == 1):
+			msg.angular.z = 60.0
+		if(self.toggle_mode):
+			msg.linear.z = self.pwm
+			if(self.button["X"] == 1):
+				msg.angular.z = 50.0
+		self.sent_drive.publish(msg)
 
 		tempMsg = [
 					msg.linear.x,
@@ -377,7 +398,7 @@ class Ps4(Node):
 		self.gui(tempMsg)
 
 		# //------------------------------------------------------------------------------------------------//
-		self.sent_drive.publish(msg)
+		
 
 	def gui(self, msg_temp):
 		block = [

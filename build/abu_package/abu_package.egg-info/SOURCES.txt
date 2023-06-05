@@ -13,6 +13,7 @@ abu_package/detectColor.py
 abu_package/feed.py
 abu_package/imu.py
 abu_package/my_node.py
+abu_package/ps4 (another copy).py
 abu_package/ps4 (copy).py
 abu_package/ps4.py
 abu_package/shoot.py
