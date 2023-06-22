@@ -20,31 +20,34 @@
 
 //-----------------------------------------------------------------------------------//
 
-#define PWM1 1
-#define PWM2 5
-#define PWM3 22
-#define PWM4 4
+#define PWM1 0
+#define PWM2 23
+#define PWM3 29
+#define PWM4 33
 
-#define INA1 20
-#define INA2 6
-#define INA3 23
-#define INA4 3
+#define INA1 2
+#define INA2 21
+#define INA3 30
+#define INA4 34
 int ina1 = 0, ina2 = 0, ina3 = 0, ina4 = 0;
 
-#define INB1 21
-#define INB2 8
-#define INB3 0
-#define INB4 2
+#define INB1 1
+#define INB2 22
+#define INB3 31
+#define INB4 35
 int inb1 = 0, inb2 = 0, inb3 = 0, inb4 = 0;
 
-#define stepPin 26
+#define stepPWM 37
+#define stepINA 38
+#define stepINB 39
 #define limit_s 27
 
-#define limit_s1 17 //top
-#define limit_s2 16 //under
+#define limit_s1 41 //top
+#define limit_s2 40 //under
 
-#define pick_ina 40
-#define pick_inb 41
+#define pick_ina 17
+#define pick_inb 16
+#define pick_pwm 15
 float pick = 0;
 String pick_state = "up";
 bool pick_on = false;
@@ -55,8 +58,11 @@ int statein = 0;
 
 bool once = false;
 
-#define shoot_motor_under 14
-#define shoot_motor_top 15
+bool toggle_shoot = false;
+bool toggle_once = false;
+
+#define shoot_motor_under 4
+#define shoot_motor_top -1
 
 static uint32_t preTime;
 
@@ -85,7 +91,24 @@ int lim_switch2(){
   return st;
 }
 
-void shoot_fun(float pwmm){
+void step_run(String stat){
+  analogWrite(stepPWM, 215);
+  if (stat == "front"){
+    digitalWrite(stepINA, HIGH);
+    digitalWrite(stepINB, LOW);   
+  }
+  else if(stat == "back"){
+    digitalWrite(stepINA, LOW);
+    digitalWrite(stepINB, HIGH);       
+  }
+  else if(stat == "stop"){
+    digitalWrite(stepINA, HIGH);
+    digitalWrite(stepINB, HIGH);      
+  }
+
+}
+
+void shoot_fun(float pwmm, float someth){
       if(pwmm > 0) keep_pwm = pwmm;
   
       if((pwmm > 0)  && (statein == 1)){
@@ -96,20 +119,25 @@ void shoot_fun(float pwmm){
       }
 
       if(statein == 0){
+        analogWrite(shoot_motor_under, 0);
+        analogWrite(shoot_motor_top, 0);
         if(lim_switch() == true){
-          digitalWrite(stepPin, HIGH);
+          step_run("front");
         }
         else{
           statein = 1;          
           analogWrite(shoot_motor_under, 0);
           analogWrite(shoot_motor_top, 0);
-          digitalWrite(stepPin, LOW);
+          step_run("stop");
           once = true;
         }
       }
       if (statein == 1){
-        if(lim_switch() == true) digitalWrite(stepPin, HIGH);
-        else digitalWrite(stepPin, LOW);
+        if(lim_switch() == true) step_run("front");
+        else{
+          if(someth == 30) step_run("front");
+          else step_run("stop");
+        }
         if(once){
           analogWrite(shoot_motor_under, 0);
           analogWrite(shoot_motor_top, 0);
@@ -117,7 +145,7 @@ void shoot_fun(float pwmm){
         }
       }
       if (statein == 2){
-        if(millis() - preTime > 1500){
+        if(millis() - preTime > 2000){
           statein  = 3;
           once = true;
         }
@@ -131,20 +159,66 @@ void shoot_fun(float pwmm){
       }
       if (statein == 3){
         if(lim_switch() == false){
-          digitalWrite(stepPin, HIGH);
+          step_run("front");
         }
         else{
           statein = 4;
-          digitalWrite(stepPin, LOW);
+          step_run("front");
           once = true;
           preTime = millis();
         }
       }
       if(statein == 4){
-        if(millis() - preTime > 750){
+        if(millis() - preTime > 1500){
           statein  = 0;
           analogWrite(shoot_motor_under, 0);
           analogWrite(shoot_motor_top, 0);
+        }
+      }
+}
+
+
+int statein2 = 0;
+bool once2 = false;
+void shoot_fun2(float pwmm, float someth){
+      analogWrite(shoot_motor_under, pwmm);
+      analogWrite(shoot_motor_top, pwmm);
+  
+      if((someth > 50.0)  && (statein == 1)){
+        statein2 = 2;
+        once2 = true;
+        preTime = millis();
+      }
+
+      if(statein2 == 0){
+        if(lim_switch() == true){
+          step_run("front");
+        }
+        else{
+          statein2 = 1;          
+          step_run("stop");
+          once2 = true;
+        }
+      }
+      if (statein2 == 1){
+        if(lim_switch() == true) step_run("front");
+        else{
+          if(someth == 30) step_run("front");
+          else step_run("stop");
+        }
+        if(once){
+          once2 = false;
+        }
+      }
+      if (statein2 == 2){
+        if(lim_switch() == false){
+          step_run("front");
+        }
+        else{
+          statein2 = 0;
+          step_run("stop");
+          once2 = true;
+          preTime = millis();
         }
       }
 }
@@ -206,7 +280,7 @@ void pick_fun(float msg){
       pick_on = true;
       analogWrite(shoot_motor_under, 0);
       analogWrite(shoot_motor_top, 0);
-      digitalWrite(stepPin, LOW);
+      step_run("stop");
     }
 
     if((pick == 10) || (pick == 20)) pick_on = false;
@@ -222,6 +296,7 @@ void pick_fun(float msg){
         else{
           digitalWrite(pick_ina, HIGH);
           digitalWrite(pick_inb, LOW);
+          analogWrite(pick_pwm, 100);
         }
       }
       else{
@@ -234,6 +309,7 @@ void pick_fun(float msg){
         else{
           digitalWrite(pick_ina, LOW);
           digitalWrite(pick_inb, HIGH);
+          analogWrite(pick_pwm, 100);
         }
       }
     }
@@ -242,15 +318,18 @@ void pick_fun(float msg){
         if(lim_switch2() == true){
         digitalWrite(pick_ina, HIGH);
         digitalWrite(pick_inb, LOW);
+        analogWrite(pick_pwm, 100);
         }
       }
       else if(pick == 20){
         digitalWrite(pick_ina, LOW);
-        digitalWrite(pick_inb, HIGH);        
+        digitalWrite(pick_inb, HIGH);
+        analogWrite(pick_pwm, 100);        
       }
       else{
         digitalWrite(pick_ina, HIGH);
         digitalWrite(pick_inb, HIGH);
+        analogWrite(pick_pwm, 0);
       }    
     }
 }
@@ -299,21 +378,43 @@ void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
 void subscription_callback(const void *msgin) {
   const geometry_msgs__msg__Twist * msg_sub = (const geometry_msgs__msg__Twist *)msgin;
     drive_fun(msg_sub->linear.x, msg_sub->linear.y, msg_sub->angular.x, msg_sub->angular.y);
-    
-    if(lim_switch2() == true) shoot_fun(msg_sub->linear.z);
+
+    if(msg_sub->angular.z == 40.0){
+      if(toggle_shoot == false) toggle_shoot = true;
+      else toggle_shoot = false;
+      toggle_once = true;
+    }
+
+    if(lim_switch1() == false){
+      if(toggle_shoot == false){
+        if(toggle_once){
+          statein = 0;
+          once = false;
+          toggle_once = false;
+        }
+        shoot_fun(msg_sub->linear.z, msg_sub->angular.z);
+      }
+      else{
+        if(toggle_once){
+          statein2 = 0;
+          once2 = false;
+          toggle_once = false;
+        }   
+        shoot_fun2(msg_sub->linear.z, msg_sub->angular.z);     
+      }
+    }
     else{
       digitalWrite(shoot_motor_under, LOW);
       digitalWrite(shoot_motor_top, LOW);
-      if(msg_sub->angular.z == 999) digitalWrite(stepPin, HIGH);
-      else digitalWrite(stepPin, LOW);
+      if(msg_sub->angular.z == 30) step_run("front");
+      else if(msg_sub->angular.z ==
+      60) step_run("back");
+      else step_run("stop");
     }
-    
+
+    pick_fun(msg_sub->angular.z);
 }
 
-// Functions create_entities and destroy_entities can take several seconds.
-// In order to reduce this rebuild the library with
-// - RMW_UXRCE_ENTITY_CREATION_DESTROY_TIMEOUT=0
-// - UCLIENT_MAX_SESSION_CONNECTION_ATTEMPTS=3
 
 bool create_entities()
 {
@@ -394,11 +495,13 @@ void renew(){
   digitalWrite(INA4, HIGH);
   digitalWrite(INB4, HIGH);
 
-  digitalWrite(pick_ina, HIGH);
-  digitalWrite(pick_inb, HIGH);
+  digitalWrite(pick_ina, LOW);
+  digitalWrite(pick_inb, LOW);
 
   digitalWrite(shoot_motor_under, LOW);
   digitalWrite(shoot_motor_top, LOW);
+
+  step_run("stop");
 }
 
 
@@ -406,6 +509,34 @@ void renew(){
 void setup() {
   set_microros_transports();
   pinMode(LED_PIN, OUTPUT);
+  pinMode(PWM1, OUTPUT);
+  pinMode(PWM2, OUTPUT);
+  pinMode(PWM3, OUTPUT);
+  pinMode(PWM4, OUTPUT);
+  pinMode(INA1, OUTPUT);
+  pinMode(INA2, OUTPUT);
+  pinMode(INA3, OUTPUT);
+  pinMode(INA4, OUTPUT);
+  pinMode(INB1, OUTPUT);
+  pinMode(INB2, OUTPUT);
+  pinMode(INB3, OUTPUT);
+  pinMode(INB4, OUTPUT);
+
+  pinMode(stepPWM,OUTPUT); 
+  pinMode(stepINA,OUTPUT);
+  pinMode(stepINB,OUTPUT);
+  step_run("stop");
+ 
+  pinMode(limit_s,INPUT_PULLUP);
+  pinMode(limit_s1,INPUT_PULLUP);
+  pinMode(limit_s2,INPUT_PULLUP);
+
+  pinMode(shoot_motor_under, OUTPUT);
+//  pinMode(shoot_motor_top, OUTPUT);
+
+  pinMode(pick_ina, OUTPUT);
+  pinMode(pick_inb, OUTPUT);
+  pinMode(pick_pwm, OUTPUT);
 
   state = WAITING_AGENT;
   
