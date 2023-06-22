@@ -327,9 +327,9 @@ class Ps4(Node):
 		if((self.button["S"] == 1) and (self.button["O"] == 1)):
 			self.assis_shoot[self.state] = 0
 		elif(self.button["S"] == 1):
-			self.assis_shoot[self.state] += 0.5
+			self.assis_shoot[self.state] += 1.0
 		elif(self.button["O"] == 1):
-			self.assis_shoot[self.state] -= 0.5
+			self.assis_shoot[self.state] -= 1.0
 			
 
 #//------------------------------------------------------------------------------------------------//
